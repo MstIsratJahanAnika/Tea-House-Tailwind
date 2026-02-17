@@ -32,7 +32,7 @@
 <body>
     <header>
         <!-- Banner section start -->
-        <section class="container mx-auto sm:pl-0">
+        <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto sm:pl-0">
             <div class="section-content flex flex-col lg:flex-row justify-between items-center">
                 <div class="banner-left space-y-[30px]">
                     <h1 class="text-[5rem] font-bold">It's good <br> tea time at The <br>Tea House</h1>
@@ -40,22 +40,18 @@
                         Taste
                         Buds.
                     </p>
-                    <div>
-                        <button
+                    <button
                         class="py-3 px-5 rounded-md font-semibold text-white  bg-linear-to-r from-[#FF8938] to-[#FF0000]">Explore
-                        More <span class="-rotate-45 inline-block"><i class="fa-solid fa-arrow-right"></i></span>
-                    </button>
-                    </div>
+                        More <span class="-rotate-45 inline-block"><i
+                                class="fa-solid fa-arrow-right"></i></span></button>
                 </div>
 
-                <div class="banner-right relative mt-10 lg:mt-0"> <!--parent position relative-->
+                <div class="banner-right flex justify-end items-end relative"> <!--parent position relative-->
                     <img src="images/banner.png" alt="logo">
                     <!-- banner-rating -->
                     <div
-                        class="bg-white rounded-2xl shadow-2xl py-[0.7rem] sm:py-4.5 px-4 sm:px-[1.725rem] flex justify-center items-center absolute left-[180px] bottom-3 gap-[13px]">
-                        <div class="mr-[13px] w-8 sm:w-fit">
-                            <img src="images/banner-rating.png" alt="rating-star">
-                        </div>
+                        class="bg-white rounded-2xl shadow-2xl w-[255px] flex justify-center items-center absolute left-[180px] bottom-3 py-[25px] px-[15px] gap-[13px]">
+                        <img src="images/banner-rating.png" alt="rating">
                         <div class="gap-[13px]">
                             <h2 class="font-bold text-2xl">5.00</h2>
                             <p>Trust Pilot Ratings</p>
@@ -247,9 +243,7 @@
                     <!-- card-1 -->
                     <div class="p-[22px] border border-[#D2D2D2] rounded-md mx-auto">
                         <div class="space-y-3">
-                            <div class="w-full">
-                                <img src="images/news-1.png" alt="">
-                            </div>
+                            <img src="images/news-1.png" alt="">
                             <p class="text-[#777777]">Feb 05, 2027</p>
                             <h3 class="font-extrabold text-[20px]">Collecting 8 points for <br> discount</h3>
                             <p class="text-[#777777]">There are many variations of passages of <br>Lorem Ipsum
@@ -261,9 +255,7 @@
                     <!-- card-2 -->
                     <div class="p-[22px] border border-[#D2D2D2] rounded-md mx-auto">
                         <div class="space-y-3">
-                            <div class="w-full">
-                                <img src="images/news-2.png" alt="">
-                            </div>
+                            <img src="images/news-2.png" alt="">
                             <p class="text-[#777777]">Feb 05, 2027</p>
                             <h3 class="font-extrabold text-[20px]">Collecting 8 points for <br>discount</h3>
                             <p class="text-[#777777]">There are many variations of passages of <br>Lorem Ipsum
@@ -275,9 +267,7 @@
                     <!-- card-3 -->
                     <div class="p-[22px] border border-[#D2D2D2] rounded-md mx-auto">
                         <div class="space-y-">
-                            <div class="w-full">
-                                <img src="images/news-3.png" alt="">
-                            </div>
+                            <img src="images/news-3.png" alt="">
                             <p class="text-[#777777]">Feb 05, 2027</p>
                             <h3 class="font-extrabold text-[20px]">Collecting 8 points for <br>discount</h3>
                             <p class="text-[#777777]">There are many variations of passages of <br>Lorem Ipsum
@@ -295,27 +285,22 @@
 
     <!-- footer section start -->
     <footer class="bg-[#ffefe9] space-y-8 pt-[130px] pb-[130px]">
-        <!--class="bg-linear-to-r from-[#FF8938]/10 to-[#FF0000]/10"-->
-        <div class=" container mx-auto">
+        <div class="mx-auto max-w-[80%]">
             <!-- first div -->
-            <div class="footer-row-1 flex flex-col justify-between pt-32.5 pb-[100px] items-center lg:flex-row">
-                <!--flex justify-between pb-20-->
-                <div>
-                    <img src="./images/cup.png" alt="logo">
-                </div>
-                <div class="flex flex-col items-center lg:flex-row lg:gap-10 mt-8 lg:mt-0 lg:mr-20">
-                    <!--flex items-center gap-10-->
-                    <p class="leading-10">Ready to get strated?</p>
+            <div class="flex justify-between pb-20">
+                <img src="images/cup.png" alt="" class="pl-10 pt-8">
+                <div class="flex items-center gap-10">
+                    <p>Ready to get strated?</p>
                     <button
-                        class="py-3 px-5 mr-10 cursor-pointer rounded-md font-semibold text-white  bg-linear-to-r from-[#FF8938] to-[#FF0000]">
+                        class="py-3 px-5 mr-10 rounded-md font-semibold text-white  bg-linear-to-r from-[#FF8938] to-[#FF0000]">
                         Get Started
                     </button>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:gap-0 text-center md:grid-cols-2 lg:grid-cols-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pl-15">
                 <ul class="space-y-5">
-                    <li class="font-semibold text-[20px] mb-[22px]">Quick Links</li>
+                    <li class="font-semibold text-[20px]">Quick Links</li>
                     <li class="text-[#494949]"><a href="">Home</a></li>
                     <li class="text-[#494949]"><a href="">About Us</a></li>
                     <li class="text-[#494949]"><a href="">Insurance</a></li>
@@ -323,7 +308,7 @@
                 </ul>
 
                 <ul class="space-y-5">
-                    <li class="font-semibold text-[20px] mb-[22px]">Our Service</li>
+                    <li class="font-semibold text-[20px]">Our Service</li>
                     <li class="text-[#494949]"><a href="">Life Insurance</a></li>
                     <li class="text-[#494949]"><a href="">Car Insurance</a></li>
                     <li class="text-[#494949]"><a href="">Health Insurance</a></li>
@@ -331,35 +316,34 @@
                 </ul>
 
                 <ul class="space-y-5">
-                    <li class="font-semibold text-[20px] mb-[22px]">Help</li>
+                    <li class="font-semibold text-[20px]">Help</li>
                     <li class="text-[#494949]"><a href="">FAQs</a></li>
                     <li class="text-[#494949]"><a href="">Contact Us</a></li>
                 </ul>
 
                 <div class="space-y-4">
-                    <h2 class="font-semibold text-[24px] leading-10">Subscribe to our <br> newsletter</h2>
+                    <h2 class="font-semibold text-[24px]">Subscribe to our <br> newsletter</h2>
 
                     <!-- input - email -->
+                    <div class="flex gap-5">
+                        <input type="text" name="" id="" placeholder="Email address" class="border-b pb-2 outline-none">
+                        <button
+                            class="h-11 w-12 ml-20 font-semibold text-white  bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-full">
+                            <span><i class="fa-solid fa-greater-than"></i></span>
+                        </button>
+                    </div>
 
-                    <input type="email" name="" id="" placeholder="Email address" class="border-b pb-2 outline-none">
-                    <button
-                        class="bg-linear-to-r from-[#FF8938] to-[#FF0000] rounded-full text-white p-[7.65px] cursor-pointer">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
 
-
-
-                    <div class="dark-2 text-2xl space-x-6">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <div class="flex gap-5 space-y-4">
+                        <span><i class="fa-brands fa-facebook-f"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-square-instagram"></i></span>
                     </div>
                 </div>
             </div>
 
             <!-- copyright footer -->
-            <p class="text-[#494949] text-center mt-16 lg:mt-10 sm:mt-4 pb-32.5">&copy; 2027 UIDesign.to - All rights
-                reserved.</p>
+            <p class="text-[#494949] text-center ">© 2027 UIDesign.to - All rights reserved.</p>
         </div>
 
     </footer>
